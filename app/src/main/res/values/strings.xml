@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">TrabajaYa</string>
+    <string name="text_view_find_job">BUSCAR TRABAJO</string>
+    <string name="text_view_find">BUSCAR</string>
+    <string name="text_view_filter">FILTRAR</string>
+    <string name="text_view_name_publish">WEB DEVELOPER</string>
+    <string name="text_view_company">Compañia</string>
+    <string name="text_view_order">Ordenar Por:</string>
+    <string name="text_view_company_name">Live Love</string>
+    <string name="text_view_location">Ubicación</string>
+    <string name="text_view_location_name">Germany, Berlin</string>
+    <string name="text_content_pi">Content</string>
 </resources>
