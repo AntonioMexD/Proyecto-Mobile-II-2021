@@ -1,4 +1,5 @@
 <resources>
+
     <string name="app_name">TrabajaYa</string>
     <string name="text_view_find_job">BUSCAR TRABAJO</string>
     <string name="text_view_find">BUSCAR</string>
@@ -10,4 +11,14 @@
     <string name="text_view_location">Ubicación</string>
     <string name="text_view_location_name">Germany, Berlin</string>
     <string name="text_content_pi">Content</string>
+
+    <string name="label_name_profile">Bob El Constructor</string>
+    <string name="label_info_account">DETALLES DE LA CUENTA</string>
+    <string name="label_email">Correo Electronico</string>
+    <string name="label_email_text">bob_constructor@gmail.com</string>
+    <string name="label_phone">Numero De Celular</string>
+    <string name="label_phone_text">+591 77968874</string>
+    <string name="label_publish">MIS PUBLICACIONES</string>
+    <string name="description">Image</string>
+
 </resources>
