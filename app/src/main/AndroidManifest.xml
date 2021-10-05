@@ -19,6 +19,9 @@
             android:name=".PaginaInicio"
             android:exported="true" />
         <activity
+            android:name=".WorkDetail"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
