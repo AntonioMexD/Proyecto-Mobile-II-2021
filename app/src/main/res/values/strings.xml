@@ -11,7 +11,14 @@
     <string name="text_view_location">Ubicación</string>
     <string name="text_view_location_name">Germany, Berlin</string>
     <string name="text_content_pi">Content</string>
-
+    <string name="text_description_work_detail">Los ingenieros de Jalasoft crean productos y servicios que tienen un impacto en la vida diaria de nuestros clientes y equipos internos. Sus contribuciones garantizarán que se entregue continuamente valor tangible a los usuarios finales. Se espera que un candidato exitoso trabaje en estrecha colaboración con el equipo de diseño y producto para garantizar la entrega oportuna de excelentes productos. También tendrá que estar dispuesto a aprender y apasionado por hacer contribuciones al éxito del equipo.</string>
+    <string name="text_description_work_knowledge">• Experiencia con Scrum/metodologia de desarrollo Agile
+• Buen conocimiento de los protocolos de servicios web como REST, SOAP y diseño de API para extensibilidad y portabilidad
+• Capacidad para utilizar software de control de versiones como Git
+• Conociemiento practico de programacion orientada a objetos.
+• Conocimiento de los marcos de desarrollo de frontend. React, Angular, VueJS
+• Comprensión de conceptos en estructuras de datos y algoritmos con capacidad demostrada para hacer uso de ellos.</string>
+    
     <string name="label_name_profile">Bob El Constructor</string>
     <string name="label_info_account">DETALLES DE LA CUENTA</string>
     <string name="label_email">Correo Electronico</string>
