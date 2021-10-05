@@ -21,4 +21,28 @@
     <string name="label_publish">MIS PUBLICACIONES</string>
     <string name="description">Image</string>
 
+    <string name="button_text">Atras</string>
+    <string name="publish_job">PUBLICAR TRABAJO</string>
+    <string name="detalles">DETALLES</string>
+    <string name="empresa">Empresa:</string>
+    <string name="empresa_text">empresa</string>
+    <string name="titulo">Título:</string>
+    <string name="titulo_text">título</string>
+    <string name="descripcion">Descripción:</string>
+    <string name="descripcion_text">descripción</string>
+    <string name="area">Area:</string>
+    <string name="area_text">area</string>
+    <string name="departamento">Departamento:</string>
+    <string name="departamento_text">departamento</string>
+    <string name="jornada">Jornada:</string>
+    <string name="jornada_text">jornada</string>
+    <string name="requisitos">Requisitos:</string>
+    <string name="requisitos_text">requisitos</string>
+    <string name="contacto">CONTACTO</string>
+    <string name="correo">Correo:</string>
+    <string name="correo_text">correo</string>
+    <string name="telefono">Telefono:</string>
+    <string name="telefono_text">telefono</string>
+    <string name="boton_publicar_texto">Publicar</string>
+
 </resources>
