@@ -1,3 +1,57 @@
 <resources>
+
     <string name="app_name">TrabajaYa</string>
+    <string name="text_view_find_job">BUSCAR TRABAJO</string>
+    <string name="text_view_find">BUSCAR</string>
+    <string name="text_view_filter">FILTRAR</string>
+
+    <string name="texto_nombre_publicacion">DESARROLLADOR WEB</string>
+    <string name="texto_compañia">Compañia</string>
+    <string name="texto_ordenar">Ordenar Por:</string>
+    <string name="texto_nombre_compañia">Live Love</string>
+    <string name="texto_ubicacion">Ubicación</string>
+    <string name="texto_nombre_ubicacion">Germany, Berlin</string>
+    <string name="texto_contenido_imagen">Content</string>
+
+    <string name="text_description_work_detail">Los ingenieros de Jalasoft crean productos y servicios que tienen un impacto en la vida diaria de nuestros clientes y equipos internos. Sus contribuciones garantizarán que se entregue continuamente valor tangible a los usuarios finales. Se espera que un candidato exitoso trabaje en estrecha colaboración con el equipo de diseño y producto para garantizar la entrega oportuna de excelentes productos. También tendrá que estar dispuesto a aprender y apasionado por hacer contribuciones al éxito del equipo.</string>
+    <string name="text_description_work_knowledge">• Experiencia con Scrum/metodologia de desarrollo Agile
+• Buen conocimiento de los protocolos de servicios web como REST, SOAP y diseño de API para extensibilidad y portabilidad
+• Capacidad para utilizar software de control de versiones como Git
+• Conociemiento practico de programacion orientada a objetos.
+• Conocimiento de los marcos de desarrollo de frontend. React, Angular, VueJS
+• Comprensión de conceptos en estructuras de datos y algoritmos con capacidad demostrada para hacer uso de ellos.</string>
+
+    <string name="etiqueta_nombre_perfil">Bob El Constructor</string>
+    <string name="etiqueta_informacion_cuenta">DETALLES DE LA CUENTA</string>
+    <string name="etiqueta_correo_electronico">Correo Electronico</string>
+    <string name="etiqueta_email">bob_constructor@gmail.com</string>
+    <string name="etiqueta_telefono">Numero De Celular</string>
+    <string name="etiqueta_numero_telefono">+591 77968874</string>
+    <string name="etiqueta_publicacion">MIS PUBLICACIONES</string>
+    <string name="descripcion_imagen">Image</string>
+
+    <string name="button_text">Atras</string>
+    <string name="publish_job">PUBLICAR TRABAJO</string>
+    <string name="detalles">DETALLES</string>
+    <string name="empresa">Empresa:</string>
+    <string name="empresa_text">empresa</string>
+    <string name="titulo">Título:</string>
+    <string name="titulo_text">título</string>
+    <string name="descripcion">Descripción:</string>
+    <string name="descripcion_text">descripción</string>
+    <string name="area">Area:</string>
+    <string name="area_text">area</string>
+    <string name="departamento">Departamento:</string>
+    <string name="departamento_text">departamento</string>
+    <string name="jornada">Jornada:</string>
+    <string name="jornada_text">jornada</string>
+    <string name="requisitos">Requisitos:</string>
+    <string name="requisitos_text">requisitos</string>
+    <string name="contacto">CONTACTO</string>
+    <string name="correo">Correo:</string>
+    <string name="correo_text">correo</string>
+    <string name="telefono">Telefono:</string>
+    <string name="telefono_text">telefono</string>
+    <string name="boton_publicar_texto">Publicar</string>
+
 </resources>
