@@ -1,9 +1,9 @@
 <resources>
 
     <string name="app_name">TrabajaYa</string>
-    <string name="text_view_find_job">BUSCAR TRABAJO</string>
-    <string name="text_view_find">BUSCAR</string>
-    <string name="text_view_filter">FILTRAR</string>
+    <string name="texto_buscar_trabajo">BUSCAR TRABAJO</string>
+    <string name="texto_buscar">BUSCAR</string>
+    <string name="texto_filtro">FILTRAR</string>
 
     <string name="texto_nombre_publicacion">DESARROLLADOR WEB</string>
     <string name="texto_compañia">Compañia</string>

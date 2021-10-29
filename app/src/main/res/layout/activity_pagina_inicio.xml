@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/text_view_find_job" />
+        android:text="@string/texto_buscar_trabajo" />
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
                     android:autofillHints="BUSCAR"
-                    android:hint="@string/text_view_find"
+                    android:hint="@string/texto_buscar"
                     android:inputType="text"
                     android:minHeight="48dp" />
 
@@ -37,7 +37,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
                     android:gravity="end|center_vertical"
-                    android:text="@string/text_view_filter" />
+                    android:text="@string/texto_filtro" />
 
             </LinearLayout>
 
