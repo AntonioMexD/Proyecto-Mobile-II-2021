@@ -8,7 +8,7 @@ import android.widget.Spinner
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_pagina_inicio)
+        setContentView(R.layout.activity_perfil_usuario)
 
     }
 }

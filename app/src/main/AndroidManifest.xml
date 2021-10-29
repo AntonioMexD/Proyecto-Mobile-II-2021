@@ -10,10 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TrabajaYa">
         <activity
+            android:name=".PerfilUsuario"
+            android:exported="true" />
+        <activity
             android:name=".PublicarTrabajo"
             android:exported="true" />
         <activity
-            android:name=".UserProfile"
+            android:name=".PerfilUsuario"
             android:exported="true" />
         <activity
             android:name=".PaginaInicio"
