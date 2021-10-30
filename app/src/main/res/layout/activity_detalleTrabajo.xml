@@ -24,7 +24,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="left|center"
-            android:text="SENIOR SOFTWARE DEVELOPER (RE-ADVERTISED)" />
+            android:text="@string/texto_descripcion_trabajo_titulo" />
 
     </LinearLayout>
 
@@ -40,7 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#FFFFFF"
-            android:text="JalaSoft"
+            android:text="@string/texto_descripcion_trabajo_lugarDeTrabajo"
             android:textSize="8sp" />
 
         <TextView
@@ -48,7 +48,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Quillacollo, Cochabamba"
+            android:text="@string/texto_descripcion_trabajo_direccion"
             android:textSize="8sp" />
     </LinearLayout>
 
@@ -62,7 +62,7 @@
             android:layout_width="wrap_content"
             android:layout_height="31dp"
             android:layout_weight="1"
-            android:text="Hace 3 dias"
+            android:text="@string/texto_descripcion_trabajo_tiempo"
             android:textSize="8sp" />
     </LinearLayout>
 
@@ -75,14 +75,14 @@
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:text="Job Summary"
+            android:text="@string/texto_descripcion_trabajo_resumen"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView10"
             android:layout_width="match_parent"
             android:layout_height="24dp"
-            android:text="DESCRIPCION"
+            android:text="@string/texto_descripcion_trabajo_descripcion"
             android:textSize="10sp"
             android:textStyle="bold" />
 
@@ -90,14 +90,14 @@
             android:id="@+id/textView11"
             android:layout_width="match_parent"
             android:layout_height="92dp"
-            android:text="@string/text_description_work_detail"
+            android:text="@string/texto_descripcion_trabajo_detalle"
             android:textSize="10sp" />
 
         <TextView
             android:id="@+id/textView12"
             android:layout_width="match_parent"
             android:layout_height="28dp"
-            android:text="CONOCIMIENTOS"
+            android:text="@string/texto_descripcion_trabajo_conocimientos"
             android:textSize="10sp"
             android:textStyle="bold" />
 
@@ -105,7 +105,7 @@
             android:id="@+id/textView13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/text_description_work_knowledge"
+            android:text="@string/texto_descripcion_trabajo_conocimientoDetalle"
             android:textSize="10sp" />
         android:textSize="10sp" />
     </LinearLayout>
@@ -120,7 +120,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Nivel de educaion:"
+            android:text="@string/texto_descripcion_trabajo_nivelEducacion"
             android:textSize="10sp" />
 
         <TextView
@@ -128,7 +128,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Licenciatura"
+            android:text="@string/texto_descripcion_trabajo_nivel"
             android:textSize="10sp" />
     </LinearLayout>
 
@@ -142,7 +142,7 @@
             android:layout_width="68dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Experiencia laboral relevante requerida:"
+            android:text="@string/texto_descripcion_trabajo_experienciaLaboral"
             android:textSize="10sp" />
 
         <TextView
@@ -150,7 +150,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="3 años"
+            android:text="@string/texto_descripcion_trabajo_experiencia"
             android:textSize="10sp" />
     </LinearLayout>
 
@@ -164,7 +164,7 @@
             android:layout_width="59dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Idiomas requeridos:"
+            android:text="@string/texto_descripcion_trabajo_idiomasRequeridos"
             android:textSize="10sp" />
 
         <TextView
@@ -172,7 +172,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Ingles"
+            android:text="@string/texto_descripcion_trabajo_idiomas"
             android:textSize="10sp" />
     </LinearLayout>
 
