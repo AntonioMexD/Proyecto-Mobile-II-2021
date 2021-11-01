@@ -70,4 +70,8 @@
     <string name="telefono_text">telefono</string>
     <string name="boton_publicar_texto">Publicar</string>
 
+    <string name="boton_trabajos_menu">Trabajos</string>
+    <string name="boton_cuenta_menu">Mi cuenta</string>
+    <string name="boton_publicar_trabajo_menu">Publicar</string>
+
 </resources>
