@@ -16,16 +16,13 @@
             android:name=".PublicarTrabajo"
             android:exported="true" />
         <activity
-            android:name=".PerfilUsuario"
-            android:exported="true" />
-        <activity
-            android:name=".PaginaInicio"
+            android:name=".MainActivity"
             android:exported="true" />
         <activity
             android:name=".DetalleTrabajo"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".PaginaInicio"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
