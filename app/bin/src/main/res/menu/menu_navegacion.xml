@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/boton_trabajos_menu"
+        android:icon="@drawable/ic_action_trabajos"
+        android:title="@string/boton_trabajos_menu" />
+    <item android:id="@+id/boton_cuenta_menu"
+        android:title="@string/boton_cuenta_menu"
+        android:icon="@drawable/ic_action_cuenta" />
+    <item android:id="@+id/boton_publicar_trabajo_menu"
+        android:title="@string/boton_publicar_trabajo_menu"
+        android:icon="@drawable/ic_action_publicar" />
+</menu>

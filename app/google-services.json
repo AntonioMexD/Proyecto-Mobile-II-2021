@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "654031184602",
+    "project_id": "trabajayalogin",
+    "storage_bucket": "trabajayalogin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:654031184602:android:2573499b3401b7f2f87be3",
+        "android_client_info": {
+          "package_name": "com.example.trabajaya"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "654031184602-148v2nba7icqtbiqhg1lg1468aev78cl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.trabajaya",
+            "certificate_hash": "9e0c904aec8e35a490c518bdf3038c4fa5f2a1da"
+          }
+        },
+        {
+          "client_id": "654031184602-lormus72rjsp12sg3jb3ri7464nifam5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxRln9yIWG5bvTJL-of2NtrKTQS_g_hSA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "654031184602-lormus72rjsp12sg3jb3ri7464nifam5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

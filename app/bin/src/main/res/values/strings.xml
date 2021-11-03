@@ -1,16 +1,9 @@
 <resources>
 
-<<<<<<< HEAD
     <string name="app_name">TrabajaYa</string>
     <string name="texto_buscar_trabajo">BUSCAR TRABAJO</string>
     <string name="texto_buscar">BUSCAR</string>
     <string name="texto_filtro">FILTRAR</string>
-=======
-    <string name="app_name">TrabajaYa!</string>
-    <string name="text_view_find_job">BUSCAR TRABAJO</string>
-    <string name="text_view_find">BUSCAR</string>
-    <string name="text_view_filter">FILTRAR</string>
->>>>>>> 46ccd75 (Se trabajo en Login y register)
 
     <string name="texto_seBusca">Se busca:</string>
     <string name="texto_nombre_publicacion">DESARROLLADOR WEB</string>
@@ -30,11 +23,11 @@
     <string name="texto_descripcion_trabajo_detalle">Los ingenieros de Jalasoft crean productos y servicios que tienen un impacto en la vida diaria de nuestros clientes y equipos internos. Sus contribuciones garantizarán que se entregue continuamente valor tangible a los usuarios finales. Se espera que un candidato exitoso trabaje en estrecha colaboración con el equipo de diseño y producto para garantizar la entrega oportuna de excelentes productos. También tendrá que estar dispuesto a aprender y apasionado por hacer contribuciones al éxito del equipo.</string>
     <string name="texto_descripcion_trabajo_conocimientos">CONOCIMIENTOS</string>
     <string name="texto_descripcion_trabajo_conocimientoDetalle">• Experiencia con Scrum/metodologia de desarrollo Agile
-        • Buen conocimiento de los protocolos de servicios web como REST, SOAP y diseño de API para extensibilidad y portabilidad
-        • Capacidad para utilizar software de control de versiones como Git
-        • Conociemiento practico de programacion orientada a objetos.
-        • Conocimiento de los marcos de desarrollo de frontend. React, Angular, VueJS
-        • Comprensión de conceptos en estructuras de datos y algoritmos con capacidad demostrada para hacer uso de ellos.</string>
+• Buen conocimiento de los protocolos de servicios web como REST, SOAP y diseño de API para extensibilidad y portabilidad
+• Capacidad para utilizar software de control de versiones como Git
+• Conociemiento practico de programacion orientada a objetos.
+• Conocimiento de los marcos de desarrollo de frontend. React, Angular, VueJS
+• Comprensión de conceptos en estructuras de datos y algoritmos con capacidad demostrada para hacer uso de ellos.</string>
     <string name="texto_descripcion_trabajo_nivelEducacion">Nivel de educacion</string>
     <string name="texto_descripcion_trabajo_nivel">Licenciatura</string>
     <string name="texto_descripcion_trabajo_experienciaLaboral">Experiencia laboral relevante requerida</string>
