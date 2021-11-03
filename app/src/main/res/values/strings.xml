@@ -1,16 +1,9 @@
 <resources>
 
-<<<<<<< HEAD
     <string name="app_name">TrabajaYa</string>
     <string name="texto_buscar_trabajo">BUSCAR TRABAJO</string>
     <string name="texto_buscar">BUSCAR</string>
     <string name="texto_filtro">FILTRAR</string>
-=======
-    <string name="app_name">TrabajaYa!</string>
-    <string name="text_view_find_job">BUSCAR TRABAJO</string>
-    <string name="text_view_find">BUSCAR</string>
-    <string name="text_view_filter">FILTRAR</string>
->>>>>>> 46ccd75 (Se trabajo en Login y register)
 
     <string name="texto_seBusca">Se busca:</string>
     <string name="texto_nombre_publicacion">DESARROLLADOR WEB</string>
