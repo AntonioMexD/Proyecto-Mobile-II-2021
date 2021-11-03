@@ -1,9 +1,16 @@
 <resources>
 
+<<<<<<< HEAD
     <string name="app_name">TrabajaYa</string>
     <string name="texto_buscar_trabajo">BUSCAR TRABAJO</string>
     <string name="texto_buscar">BUSCAR</string>
     <string name="texto_filtro">FILTRAR</string>
+=======
+    <string name="app_name">TrabajaYa!</string>
+    <string name="text_view_find_job">BUSCAR TRABAJO</string>
+    <string name="text_view_find">BUSCAR</string>
+    <string name="text_view_filter">FILTRAR</string>
+>>>>>>> 46ccd75 (Se trabajo en Login y register)
 
     <string name="texto_seBusca">Se busca:</string>
     <string name="texto_nombre_publicacion">DESARROLLADOR WEB</string>
@@ -70,6 +77,24 @@
     <string name="telefono">Telefono:</string>
     <string name="telefono_text">telefono</string>
     <string name="boton_publicar_texto">Publicar</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+    <string name="Nombre">NOMBRE</string>
+    <string name="Apellido">APELLIDO</string>
+    <string name="Correo_electronico">CORREO ELECTRONICO</string>
+    <string name="Contraseña">CONTRASEÑA</string>
+    <string name="Registrarse">Registrarse</string>
+    <string name="RegistrarseMayuscula">REGISTRARSE</string>
+    <string name="CrearCuenta">CREAR NUEVA CUENTA</string>
+    <string name="Ingresar">Ingresar</string>
+    <string name="IniciarSesion">Iniciar Sesion</string>
+    <string name="IngresaDatos">INGRESE SUS DATOS</string>
+
+    <string name="botonContraseña">Enviar contraseña</string>
+    <string name="OlvidarContraseña">Recupera tu contraseña</string>
+    <string name="tienesCuenta">¿Ya tienes cuenta? Ingresa aquí</string>
+    <string name="noCuenta">¿No tienes cuenta? Ingresa aquí</string>
+    <string name="noContrasena">¿Olvidaste tú contraseña?</string>
 
     <string name="boton_trabajos_menu">Trabajos</string>
     <string name="boton_cuenta_menu">Mi cuenta</string>
