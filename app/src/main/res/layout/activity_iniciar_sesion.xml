@@ -60,6 +60,7 @@
         android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="20sp"
         android:text="@string/noCuenta" />
 
     <Button
@@ -78,6 +79,7 @@
         android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="17sp"
         android:text="@string/OlvidarContraseña"/>
 
 
