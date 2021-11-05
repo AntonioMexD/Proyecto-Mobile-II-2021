@@ -3,6 +3,7 @@ package com.example.trabajaya
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_pagina_inicio.*
@@ -48,4 +49,8 @@ class PaginaInicio : AppCompatActivity() {
             }
         }
     }
+    fun abrirDetallesTrabajo(view: View) {
+        startActivity(Intent(this, DetalleTrabajo::class.java))
+    }
+
 }
