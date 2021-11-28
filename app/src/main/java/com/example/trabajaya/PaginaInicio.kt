@@ -5,22 +5,39 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.trabajaya.modeldb.Anuncio
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_pagina_inicio.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 class PaginaInicio : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pagina_inicio)
 
-        val lista = arrayListOf<Trabajo>()
+        /*val lista = arrayListOf<Trabajo>()
         lista.add(Trabajo("SENIOR DESARROLLO DE SOFTWARE", "JalaSoft", "Quillacollo, Cochabamba"))
         lista.add(Trabajo("INGENIERO INDUSTRIAL", "miCompa;ia", "Sacaba"))
         lista.add(Trabajo("TABERNERO", "Insert Coin", "America y Potosi"))
         lista.add(Trabajo("TABERNERO", "Insert Coin", "America y Potosi"))
 
         val userListAdapter = ListaTrabajoAdaptador(lista, this)
-        recyclerView.adapter = userListAdapter
+        recyclerView.adapter = userListAdapter*/
+
+        val anuncioDao = AppRoomDatabase.getDatabase(applicationContext).AnuncioDao()
+        val repository = AnuncioRepository(anuncioDao)
+        var lista= ArrayList<Anuncio>()
+        CoroutineScope(Dispatchers.IO).launch{
+            val listaAnuncios=repository.getListAnuncios()
+            lista = arrayListOf<Anuncio>()
+            listaAnuncios.forEach{
+                lista.add(it)
+            }}
+
+        val anuncioListAdapter = ListaAnunciosAdaptador(lista,this)
+        recyclerView.adapter = anuncioListAdapter
 
         val linearLayoutManager = LinearLayoutManager(this)
         linearLayoutManager.orientation = LinearLayoutManager.VERTICAL

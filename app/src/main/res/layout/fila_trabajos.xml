@@ -43,7 +43,7 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:layout_width="65dp"
+                        android:layout_width="75dp"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
                         android:text="@string/texto_seBusca" />
@@ -61,7 +61,7 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:layout_width="150dp"
+                        android:layout_width="75dp"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
                         android:text="@string/texto_compañia" />
@@ -79,7 +79,7 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:layout_width="150dp"
+                        android:layout_width="75dp"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
                         android:text="@string/texto_ubicacion" />

@@ -3,12 +3,46 @@ package com.example.trabajaya
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.TextView
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.trabajaya.modeldb.Anuncio
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.activity_pagina_inicio.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 class PerfilUsuario : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_perfil_usuario)
+
+        val nombre_usuario = findViewById(R.id.tv_name) as TextView
+        val email_usuario = findViewById(R.id.user_email) as TextView
+
+        val user = FirebaseAuth.getInstance().currentUser
+        // val userDB = dbReference.child(user?.uid.toString())
+        nombre_usuario.text=user?.displayName.toString()
+        email_usuario.text=user?.email.toString()
+
+        val anuncioDao = AppRoomDatabase.getDatabase(applicationContext).AnuncioDao()
+        val repository = AnuncioRepository(anuncioDao)
+        var lista= ArrayList<Anuncio>()
+        CoroutineScope(Dispatchers.IO).launch{
+            val listaAnuncios=repository.getListAnunciosByEmail(user?.email.toString())
+            lista = arrayListOf<Anuncio>()
+            listaAnuncios.forEach{
+                lista.add(it)
+            }}
+
+        val anuncioListAdapter = ListaAnunciosAdaptador(lista,this)
+        recyclerView.adapter = anuncioListAdapter
+
+        val linearLayoutManager = LinearLayoutManager(this)
+        linearLayoutManager.orientation = LinearLayoutManager.VERTICAL
+        recyclerView.layoutManager = linearLayoutManager
 
         val principal_bottom_navigation_menu = findViewById(R.id.principal_bottom_navigation_view) as BottomNavigationView
         principal_bottom_navigation_menu.setSelectedItemId(R.id.boton_cuenta_menu)
@@ -32,5 +66,8 @@ class PerfilUsuario : AppCompatActivity() {
                 else -> true
             }
         }
+    }
+    fun abrirDetallesTrabajo(view: View) {
+        startActivity(Intent(this, DetalleTrabajo::class.java))
     }
 }

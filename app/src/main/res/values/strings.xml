@@ -7,10 +7,10 @@
 
     <string name="texto_seBusca">Se busca:</string>
     <string name="texto_nombre_publicacion">DESARROLLADOR WEB</string>
-    <string name="texto_compañia">Compañia</string>
+    <string name="texto_compañia">Compañia:</string>
     <string name="texto_ordenar">Ordenar Por:</string>
     <string name="texto_nombre_compañia">Live Love</string>
-    <string name="texto_ubicacion">Ubicación</string>
+    <string name="texto_ubicacion">Ubicación:</string>
     <string name="texto_nombre_ubicacion">Germany, Berlin</string>
     <string name="texto_contenido_imagen">Content</string>
 
