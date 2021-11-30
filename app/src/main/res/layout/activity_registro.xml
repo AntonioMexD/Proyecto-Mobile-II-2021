@@ -22,6 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
         android:textSize="@android:dimen/app_icon_size"
+        android:textAlignment="center"
         android:text="@string/RegistrarseMayuscula" />
 
     <TextView

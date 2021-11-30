@@ -88,6 +88,7 @@
     <string name="tienesCuenta">¿Ya tienes cuenta? Ingresa aquí</string>
     <string name="noCuenta">¿No tienes cuenta? Ingresa aquí</string>
     <string name="noContrasena">¿Olvidaste tú contraseña?</string>
+    <string name="volverARegistro">Volver al Inicio de Sesión</string>
 
     <string name="boton_trabajos_menu">Trabajos</string>
     <string name="boton_cuenta_menu">Mi cuenta</string>
