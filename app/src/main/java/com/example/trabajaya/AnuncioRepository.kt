@@ -15,4 +15,8 @@ class AnuncioRepository(private val anuncioDao: IAnuncioDao) {
     fun getListAnunciosByEmail(email:String):List<Anuncio>{
         return  anuncioDao.getListByEmail(email)
     }
+
+    fun getAnuncioById(id:Int):Anuncio{
+        return anuncioDao.getAnuncioById(id)
+    }
 }

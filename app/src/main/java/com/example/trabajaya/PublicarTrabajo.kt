@@ -1,11 +1,15 @@
 package com.example.trabajaya
 
+import android.app.NotificationManager
+import android.content.Context
 import android.content.Intent
+import android.media.RingtoneManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.Spinner
+import androidx.core.app.NotificationCompat
 import com.example.trabajaya.modeldb.Anuncio
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.textfield.TextInputEditText
@@ -37,8 +41,23 @@ class PublicarTrabajo : AppCompatActivity() {
         val adaptador_jornada = ArrayAdapter(this,android.R.layout.simple_spinner_item,jornadas)
         spinner_jornada.adapter = adaptador_jornada
 
+        val sonido = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION)
+        val notification = NotificationCompat.Builder(this)
+            .setSmallIcon(R.drawable.notification_bg)
+            .setContentTitle("Notificación")
+            .setContentText("Ha publicado un anuncio en Trabaja Ya")
+            .setSound(sonido)
+            .setAutoCancel(true)
+        val notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+
+
         create_button=findViewById(R.id.boton_publicar)
-        create_button.setOnClickListener{insertAnuncio()}
+        create_button.setOnClickListener{
+            insertAnuncio()
+            notificationManager.notify(0, notification.build())
+            val intentxd = Intent(this,PaginaInicio::class.java)
+            startActivity(intentxd)
+        }
 
         val principal_bottom_navigation_menu = findViewById(R.id.principal_bottom_navigation_view) as BottomNavigationView
         principal_bottom_navigation_menu.setSelectedItemId(R.id.boton_publicar_trabajo_menu)

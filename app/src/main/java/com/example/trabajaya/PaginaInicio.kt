@@ -5,9 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.trabajaya.modeldb.Anuncio
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import kotlinx.android.synthetic.main.activity_pagina_inicio.*
+//import kotlinx.android.synthetic.main.activity_pagina_inicio.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -36,6 +37,7 @@ class PaginaInicio : AppCompatActivity() {
                 lista.add(it)
             }}
 
+        val recyclerView= findViewById(R.id.recyclerView) as RecyclerView
         val anuncioListAdapter = ListaAnunciosAdaptador(lista,this)
         recyclerView.adapter = anuncioListAdapter
 

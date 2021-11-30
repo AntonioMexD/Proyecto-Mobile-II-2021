@@ -5,11 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools">
+    <include android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
 
     <RelativeLayout
         android:id="@+id/id_rellay1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
         android:background="@drawable/grad"
         android:paddingBottom="0dp">
 
