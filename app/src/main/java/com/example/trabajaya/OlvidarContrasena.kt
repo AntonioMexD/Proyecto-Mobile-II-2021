@@ -19,13 +19,13 @@ class OlvidarContrasena : AppCompatActivity() {
         progressBar=findViewById(R.id.progressBar)
         auth= FirebaseAuth.getInstance()
 
-        //actionbar
+        /*//actionbar
         val actionbar = supportActionBar
         //set actionbar title
         actionbar!!.title = "Trabaja Ya!"
         //set back button
         actionbar.setDisplayHomeAsUpEnabled(true)
-        actionbar.setDisplayHomeAsUpEnabled(true)
+        actionbar.setDisplayHomeAsUpEnabled(true)*/
 
     }
 
@@ -50,5 +50,9 @@ class OlvidarContrasena : AppCompatActivity() {
                     }
                 }
         }
+    }
+
+    fun irInicioSesion(view: View){
+        startActivity(Intent(this, IniciarSesion::class.java))
     }
 }

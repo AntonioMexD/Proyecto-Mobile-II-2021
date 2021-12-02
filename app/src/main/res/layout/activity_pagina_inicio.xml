@@ -7,6 +7,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_margin="10dp">
+    <include android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -59,7 +61,7 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingBottom="55dp">
+            android:paddingBottom="60dp">
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerView"
                 android:layout_width="match_parent"

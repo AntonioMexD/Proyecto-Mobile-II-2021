@@ -3,44 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-<<<<<<< HEAD
-        <entry key="..\:/Users/CCCasa/Desktop/carlos/programacion movil/Proyecto-Mobile-II-2021/app/src/main/res/layout/activity_detalle_trabajo.xml" value="0.1" />
-        <entry key="..\:/Users/CCCasa/Desktop/carlos/programacion movil/Proyecto-Mobile-II-2021/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/CCCasa/Desktop/carlos/programacion movil/Proyecto-Mobile-II-2021/app/src/main/res/layout/activity_pagina_inicio.xml" value="0.26618705035971224" />
-        <entry key="..\:/Users/CCCasa/Desktop/carlos/programacion movil/Proyecto-Mobile-II-2021/app/src/main/res/layout/activity_perfil_usuario.xml" value="0.1" />
-        <entry key="..\:/Users/CCCasa/Desktop/carlos/programacion movil/Proyecto-Mobile-II-2021/app/src/main/res/layout/activity_publicar_trabajo.xml" value="0.2" />
-        <entry key="..\:/Users/CCCasa/Desktop/carlos/programacion movil/Proyecto-Mobile-II-2021/app/src/main/res/layout/fila_trabajos.xml" value="0.25" />
-        <entry key="..\:/u/progra movil/proyecto/bottombar/Proyecto-Mobile-II-2021/app/src/main/res/layout/activity_detalle_trabajo.xml" value="0.15443840579710144" />
-        <entry key="..\:/u/progra movil/proyecto/bottombar/Proyecto-Mobile-II-2021/app/src/main/res/layout/activity_pagina_inicio.xml" value="0.15443840579710144" />
-        <entry key="..\:/u/progra movil/proyecto/bottombar/Proyecto-Mobile-II-2021/app/src/main/res/layout/activity_perfil_usuario.xml" value="0.15443840579710144" />
-        <entry key="..\:/u/progra movil/proyecto/bottombar/Proyecto-Mobile-II-2021/app/src/main/res/layout/activity_publicar_trabajo.xml" value="0.15443840579710144" />
-        <entry key="..\:/u/progra movil/proyecto/bottombar/Proyecto-Mobile-II-2021/app/src/main/res/menu/menu_navegacion.xml" value="0.19947916666666668" />
-<<<<<<< HEAD
-        <entry key="..\:/u/progra movil/revision proyecto/Proyecto-Mobile-II-2021/app/src/main/res/layout/activity_detalle_trabajo.xml" value="0.33" />
-        <entry key="..\:/u/progra movil/revision proyecto/Proyecto-Mobile-II-2021/app/src/main/res/layout/activity_publicar_trabajo.xml" value="0.2871376811594203" />
-=======
-=======
-        <entry key="..\:/UNIVERSIDAD/ProgramacionMobile/ProyectoMobile-TrabajaYa/Proyecto-Mobile-II-2021/app/src/main/res/drawable/ImageCircle.xml" value="0.3828125" />
-        <entry key="..\:/UNIVERSIDAD/ProgramacionMobile/ProyectoMobile-TrabajaYa/Proyecto-Mobile-II-2021/app/src/main/res/drawable/backgroundProfile.xml" value="0.3769230769230769" />
-        <entry key="..\:/UNIVERSIDAD/ProgramacionMobile/ProyectoMobile-TrabajaYa/Proyecto-Mobile-II-2021/app/src/main/res/drawable/circle.xml" value="0.27760416666666665" />
-        <entry key="..\:/UNIVERSIDAD/ProgramacionMobile/ProyectoMobile-TrabajaYa/Proyecto-Mobile-II-2021/app/src/main/res/drawable/grad.xml" value="0.3828125" />
-        <entry key="..\:/UNIVERSIDAD/ProgramacionMobile/ProyectoMobile-TrabajaYa/Proyecto-Mobile-II-2021/app/src/main/res/drawable/ic_launcher_background.xml" value="0.22135416666666666" />
-        <entry key="..\:/UNIVERSIDAD/ProgramacionMobile/ProyectoMobile-TrabajaYa/Proyecto-Mobile-II-2021/app/src/main/res/layout/activity_forgot_pass.xml" value="0.24739583333333334" />
-        <entry key="..\:/UNIVERSIDAD/ProgramacionMobile/ProyectoMobile-TrabajaYa/Proyecto-Mobile-II-2021/app/src/main/res/layout/activity_image_circle.xml" value="0.35260416666666666" />
-        <entry key="..\:/UNIVERSIDAD/ProgramacionMobile/ProyectoMobile-TrabajaYa/Proyecto-Mobile-II-2021/app/src/main/res/layout/activity_iniciar_sesion.xml" value="0.33" />
-        <entry key="..\:/UNIVERSIDAD/ProgramacionMobile/ProyectoMobile-TrabajaYa/Proyecto-Mobile-II-2021/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
-        <entry key="..\:/UNIVERSIDAD/ProgramacionMobile/ProyectoMobile-TrabajaYa/Proyecto-Mobile-II-2021/app/src/main/res/layout/activity_main.xml" value="0.32382246376811596" />
-        <entry key="..\:/UNIVERSIDAD/ProgramacionMobile/ProyectoMobile-TrabajaYa/Proyecto-Mobile-II-2021/app/src/main/res/layout/activity_maps.xml" value="0.36666666666666664" />
-        <entry key="..\:/UNIVERSIDAD/ProgramacionMobile/ProyectoMobile-TrabajaYa/Proyecto-Mobile-II-2021/app/src/main/res/layout/activity_olvidar_contrasena.xml" value="0.2" />
-        <entry key="..\:/UNIVERSIDAD/ProgramacionMobile/ProyectoMobile-TrabajaYa/Proyecto-Mobile-II-2021/app/src/main/res/layout/activity_pagina_inicio.xml" value="0.17831813576494426" />
-        <entry key="..\:/UNIVERSIDAD/ProgramacionMobile/ProyectoMobile-TrabajaYa/Proyecto-Mobile-II-2021/app/src/main/res/layout/activity_perfil_usuario.xml" value="0.26145833333333335" />
-        <entry key="..\:/UNIVERSIDAD/ProgramacionMobile/ProyectoMobile-TrabajaYa/Proyecto-Mobile-II-2021/app/src/main/res/layout/activity_publicar_trabajo.xml" value="0.12715298885511653" />
-        <entry key="..\:/UNIVERSIDAD/ProgramacionMobile/ProyectoMobile-TrabajaYa/Proyecto-Mobile-II-2021/app/src/main/res/layout/activity_register.xml" value="0.36666666666666664" />
-        <entry key="..\:/UNIVERSIDAD/ProgramacionMobile/ProyectoMobile-TrabajaYa/Proyecto-Mobile-II-2021/app/src/main/res/layout/activity_registro.xml" value="0.25" />
-        <entry key="..\:/UNIVERSIDAD/ProgramacionMobile/ProyectoMobile-TrabajaYa/Proyecto-Mobile-II-2021/app/src/main/res/layout/activity_user_profile.xml" value="0.36666666666666664" />
-        <entry key="..\:/UNIVERSIDAD/ProgramacionMobile/ProyectoMobile-TrabajaYa/Proyecto-Mobile-II-2021/app/src/main/res/layout/activity_workdetail.xml" value="0.17831813576494426" />
->>>>>>> 46ccd75 (Se trabajo en Login y register)
->>>>>>> da7d5f3 (Se trabajo en Login y register)
+        <entry key="..\:/u/progra movil/proyecto/ultimo sprint/Proyecto-Mobile-II-2021/app/src/main/res/layout/activity_detalle_trabajo.xml" value="0.36666666666666664" />
+        <entry key="..\:/u/progra movil/proyecto/ultimo sprint/Proyecto-Mobile-II-2021/app/src/main/res/layout/activity_iniciar_sesion.xml" value="0.20520833333333333" />
+        <entry key="..\:/u/progra movil/proyecto/ultimo sprint/Proyecto-Mobile-II-2021/app/src/main/res/layout/activity_olvidar_contrasena.xml" value="0.20520833333333333" />
+        <entry key="..\:/u/progra movil/proyecto/ultimo sprint/Proyecto-Mobile-II-2021/app/src/main/res/layout/activity_pagina_inicio.xml" value="0.36666666666666664" />
+        <entry key="..\:/u/progra movil/proyecto/ultimo sprint/Proyecto-Mobile-II-2021/app/src/main/res/layout/activity_perfil_usuario.xml" value="0.36666666666666664" />
+        <entry key="..\:/u/progra movil/proyecto/ultimo sprint/Proyecto-Mobile-II-2021/app/src/main/res/layout/activity_publicar_trabajo.xml" value="0.33" />
+        <entry key="..\:/u/progra movil/proyecto/ultimo sprint/Proyecto-Mobile-II-2021/app/src/main/res/layout/activity_registro.xml" value="0.20520833333333333" />
+        <entry key="..\:/u/progra movil/proyecto/ultimo sprint/Proyecto-Mobile-II-2021/app/src/main/res/layout/fila_trabajos.xml" value="0.33" />
+        <entry key="..\:/u/progra movil/proyecto/ultimo sprint/Proyecto-Mobile-II-2021/app/src/main/res/layout/toolbar.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>
@@ -50,14 +21,4 @@
   <component name="ProjectType">
     <option name="id" value="Android" />
   </component>
-<<<<<<< HEAD
-=======
-  <component name="VisualizationToolProject">
-    <option name="state">
-      <ProjectState>
-        <option name="scale" value="0.33" />
-      </ProjectState>
-    </option>
-  </component>
->>>>>>> 46ccd75 (Se trabajo en Login y register)
 </project>
