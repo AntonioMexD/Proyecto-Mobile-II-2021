@@ -15,7 +15,6 @@
         android:layout_margin="10dp"
         card_view:cardBackgroundColor="#F1EDED"
         card_view:cardElevation="8dp"
-        android:onClick="abrirDetallesTrabajo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">

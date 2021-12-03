@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.trabajaya.modeldb.Anuncio
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -14,7 +15,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class PerfilUsuario : AppCompatActivity() {
+class PerfilUsuario : AppCompatActivity(), ItemClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_perfil_usuario)
@@ -37,7 +38,7 @@ class PerfilUsuario : AppCompatActivity() {
                 lista.add(it)
             }}
 
-        val anuncioListAdapter = ListaAnunciosAdaptador(lista,this)
+        val anuncioListAdapter = ListaAnunciosAdaptador(lista,this,this)
         recyclerView.adapter = anuncioListAdapter
 
         val linearLayoutManager = LinearLayoutManager(this)
@@ -69,5 +70,11 @@ class PerfilUsuario : AppCompatActivity() {
     }
     fun abrirDetallesTrabajo(view: View) {
         startActivity(Intent(this, DetalleTrabajo::class.java))
+    }
+    override fun onItemClickListener(anuncio: Anuncio) {
+        val intentxd = Intent(this,DetalleTrabajo::class.java)
+        intentxd.putExtra("anuncio_id",anuncio.id.toString())
+        startActivity(intentxd)
+        //Toast.makeText(this,anuncio.titulo, Toast.LENGTH_LONG).show()
     }
 }

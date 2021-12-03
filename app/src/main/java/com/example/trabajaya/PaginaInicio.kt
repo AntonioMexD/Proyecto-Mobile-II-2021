@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.trabajaya.modeldb.Anuncio
@@ -13,7 +14,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class PaginaInicio : AppCompatActivity() {
+class PaginaInicio : AppCompatActivity(), ItemClickListener{
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pagina_inicio)
@@ -38,7 +39,7 @@ class PaginaInicio : AppCompatActivity() {
             }}
 
         val recyclerView= findViewById(R.id.recyclerView) as RecyclerView
-        val anuncioListAdapter = ListaAnunciosAdaptador(lista,this)
+        val anuncioListAdapter = ListaAnunciosAdaptador(lista,this,this)
         recyclerView.adapter = anuncioListAdapter
 
         val linearLayoutManager = LinearLayoutManager(this)
@@ -67,6 +68,12 @@ class PaginaInicio : AppCompatActivity() {
                 else -> true
             }
         }
+    }
+
+    override fun onItemClickListener(anuncio: Anuncio) {
+        val intentxd = Intent(this,DetalleTrabajo::class.java)
+        intentxd.putExtra("anuncio_id",anuncio.id.toString())
+        startActivity(intentxd)
     }
     fun abrirDetallesTrabajo(view: View) {
         startActivity(Intent(this, DetalleTrabajo::class.java))
