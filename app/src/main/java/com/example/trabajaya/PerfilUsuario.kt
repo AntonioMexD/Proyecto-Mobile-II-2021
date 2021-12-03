@@ -5,16 +5,21 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.trabajaya.modeldb.Anuncio
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 import kotlinx.android.synthetic.main.activity_pagina_inicio.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class PerfilUsuario : AppCompatActivity() {
+class PerfilUsuario : AppCompatActivity(), ItemClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_perfil_usuario)
@@ -23,8 +28,18 @@ class PerfilUsuario : AppCompatActivity() {
         val email_usuario = findViewById(R.id.user_email) as TextView
 
         val user = FirebaseAuth.getInstance().currentUser
-        // val userDB = dbReference.child(user?.uid.toString())
-        nombre_usuario.text=user?.displayName.toString()
+        val mDb = FirebaseDatabase.getInstance().getReference()
+        val user_id= user!!.uid
+        mDb.child("User").child(user_id).addValueEventListener(object: ValueEventListener {
+
+            override fun onDataChange(dataSnapshot: DataSnapshot) {
+                val user_name:String = dataSnapshot.child("Name").value.toString()
+                val user_lastName:String = dataSnapshot.child("LastName").value.toString()
+                nombre_usuario.text= user_name +" "+ user_lastName
+            }
+
+            override fun onCancelled(databaseError: DatabaseError) {}
+        })
         email_usuario.text=user?.email.toString()
 
         val anuncioDao = AppRoomDatabase.getDatabase(applicationContext).AnuncioDao()
@@ -37,7 +52,7 @@ class PerfilUsuario : AppCompatActivity() {
                 lista.add(it)
             }}
 
-        val anuncioListAdapter = ListaAnunciosAdaptador(lista,this)
+        val anuncioListAdapter = ListaAnunciosAdaptador(lista,this,this)
         recyclerView.adapter = anuncioListAdapter
 
         val linearLayoutManager = LinearLayoutManager(this)
@@ -67,7 +82,10 @@ class PerfilUsuario : AppCompatActivity() {
             }
         }
     }
-    fun abrirDetallesTrabajo(view: View) {
-        startActivity(Intent(this, DetalleTrabajo::class.java))
+    override fun onItemClickListener(anuncio: Anuncio) {
+        val intentxd = Intent(this,DetalleTrabajo::class.java)
+        intentxd.putExtra("anuncio_id",anuncio.id.toString())
+        startActivity(intentxd)
+        //Toast.makeText(this,anuncio.titulo, Toast.LENGTH_LONG).show()
     }
 }
