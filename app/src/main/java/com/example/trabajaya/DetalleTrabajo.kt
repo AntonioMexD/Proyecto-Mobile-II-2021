@@ -56,10 +56,18 @@ class DetalleTrabajo : AppCompatActivity() {
                 val ubicacion_trabajo=findViewById(R.id.ubicacion_trabajo) as TextView
                 val descripcion_trabajo=findViewById(R.id.descripcion_trabajo) as TextView
                 val requisitos_trabajo=findViewById(R.id.requisitos_trabajo) as TextView
+                val area=findViewById(R.id.area) as TextView
+                val correo=findViewById(R.id.email) as TextView
+                val telefono=findViewById(R.id.telefono_texto) as TextView
+                val jornada=findViewById(R.id.jornada) as TextView
                 titulo_trabajo.text=anuncio?.titulo.toString()
                 nombre_empresa.text=anuncio?.empresa.toString()
                 ubicacion_trabajo.text=anuncio?.departamento.toString()
                 descripcion_trabajo.text=anuncio?.descripcion.toString()
                 requisitos_trabajo.text=anuncio?.requisitos.toString()
+                area.text=anuncio?.area.toString()
+                correo.text=anuncio?.correo.toString()
+                telefono.text=anuncio?.telefono.toString()
+                jornada.text=anuncio?.jornada.toString()
         }
 }

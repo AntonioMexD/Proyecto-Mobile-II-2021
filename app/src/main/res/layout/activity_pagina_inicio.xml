@@ -37,21 +37,10 @@
                     android:inputType="text"
                     android:minHeight="48dp" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="5dp"
-                    android:gravity="end|center_vertical"
-                    android:text="@string/texto_filtro" />
 
             </LinearLayout>
 
     </androidx.cardview.widget.CardView>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/texto_ordenar" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

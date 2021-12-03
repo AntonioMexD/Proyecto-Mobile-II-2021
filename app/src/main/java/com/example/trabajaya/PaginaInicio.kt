@@ -19,15 +19,6 @@ class PaginaInicio : AppCompatActivity(), ItemClickListener{
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pagina_inicio)
 
-        /*val lista = arrayListOf<Trabajo>()
-        lista.add(Trabajo("SENIOR DESARROLLO DE SOFTWARE", "JalaSoft", "Quillacollo, Cochabamba"))
-        lista.add(Trabajo("INGENIERO INDUSTRIAL", "miCompa;ia", "Sacaba"))
-        lista.add(Trabajo("TABERNERO", "Insert Coin", "America y Potosi"))
-        lista.add(Trabajo("TABERNERO", "Insert Coin", "America y Potosi"))
-
-        val userListAdapter = ListaTrabajoAdaptador(lista, this)
-        recyclerView.adapter = userListAdapter*/
-
         val anuncioDao = AppRoomDatabase.getDatabase(applicationContext).AnuncioDao()
         val repository = AnuncioRepository(anuncioDao)
         var lista= ArrayList<Anuncio>()
@@ -74,9 +65,6 @@ class PaginaInicio : AppCompatActivity(), ItemClickListener{
         val intentxd = Intent(this,DetalleTrabajo::class.java)
         intentxd.putExtra("anuncio_id",anuncio.id.toString())
         startActivity(intentxd)
-    }
-    fun abrirDetallesTrabajo(view: View) {
-        startActivity(Intent(this, DetalleTrabajo::class.java))
     }
 
 }

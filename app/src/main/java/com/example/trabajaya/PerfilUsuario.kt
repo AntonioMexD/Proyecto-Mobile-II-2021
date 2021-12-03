@@ -10,6 +10,10 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.trabajaya.modeldb.Anuncio
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 import kotlinx.android.synthetic.main.activity_pagina_inicio.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -24,8 +28,18 @@ class PerfilUsuario : AppCompatActivity(), ItemClickListener {
         val email_usuario = findViewById(R.id.user_email) as TextView
 
         val user = FirebaseAuth.getInstance().currentUser
-        // val userDB = dbReference.child(user?.uid.toString())
-        nombre_usuario.text=user?.displayName.toString()
+        val mDb = FirebaseDatabase.getInstance().getReference()
+        val user_id= user!!.uid
+        mDb.child("User").child(user_id).addValueEventListener(object: ValueEventListener {
+
+            override fun onDataChange(dataSnapshot: DataSnapshot) {
+                val user_name:String = dataSnapshot.child("Name").value.toString()
+                val user_lastName:String = dataSnapshot.child("LastName").value.toString()
+                nombre_usuario.text= user_name +" "+ user_lastName
+            }
+
+            override fun onCancelled(databaseError: DatabaseError) {}
+        })
         email_usuario.text=user?.email.toString()
 
         val anuncioDao = AppRoomDatabase.getDatabase(applicationContext).AnuncioDao()
@@ -67,9 +81,6 @@ class PerfilUsuario : AppCompatActivity(), ItemClickListener {
                 else -> true
             }
         }
-    }
-    fun abrirDetallesTrabajo(view: View) {
-        startActivity(Intent(this, DetalleTrabajo::class.java))
     }
     override fun onItemClickListener(anuncio: Anuncio) {
         val intentxd = Intent(this,DetalleTrabajo::class.java)
